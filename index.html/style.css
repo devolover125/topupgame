@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: blueviolet;
+    line-height: 1.6;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header{
+background-color: #333;
+color: white;
+font-size: 50px;
+padding: 10px 0;
+display: flex;
+text-align: center;
+justify-content: center;
+}
+
+header h1{
+    display: inline-block;
+    margin-left: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    background: url(https://media.hitekno.com/thumbs/2022/04/29/88929-ilustrasi-top-up-game/730x480-img-88929-ilustrasi-top-up-game.jpg) no-repeat center center/cover;
+    color: #effeff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.hero .btn{
+    background-color: black;
+    color: white;
+    font-size: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.games{
+    margin: 50px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+.games h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.game-list{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.game-item{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-color: rgb(44, 34, 34);
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+}
+
+.game-item img{
+    width: calc(50% - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.1);
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 100px;
+}
+
+@media(max-width: 768px){
+    .hero{
+        padding: 60px;
+    }
+    .hero h2{
+        font-size: 28px;
+    }
+    .hero p{
+        font-size: 16px;
+    }
+    .game-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .game-item{
+        width: 80px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 1024px){
+    .hero h2{
+        font-size: 24px;
+    }
+    .hero p{
+        font-size: 14px;
+    }
+    .hero .btn{
+        padding: 8px 16px;
+    }
+    .game-item{
+        width: calc(33.33%);
+        padding: 15px;
+    }
+}
